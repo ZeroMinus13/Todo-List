@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.content{
+    display: grid;
+    grid-template:  70px 1fr / 240px 1fr;
+    height: 100vh;
+}
+
+.header{
+    padding: 20px;
+    background-color: rgb(184, 184, 233);
+    grid-column: 1/3;
+}
+
+.sidebar{
+    background-color: rgb(199, 190, 190);
+    padding: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#projects{
+    border-top: 3px black double ;
+    margin-top: 20px;
+}
+
+.test{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.sidebarTop>:nth-child(-n+4):hover{
+    background-color: rgb(139, 137, 137);
+    cursor: pointer;
+}  
+
+.test:nth-child(n):hover{
+    background-color: rgb(139, 137, 137);
+    cursor: pointer;
+}
+.pro{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.pro:hover{
+    background-color: rgb(139, 137, 137);
+    cursor: pointer;
+}
+
+.con:hover{
+    background-color: rgb(139, 137, 137);
+    cursor: pointer;
+}
+
+#main{
+    padding: 10px;
+}
+
+.mainForm{
+    display: none;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid #888;
+    width: 95%;
+}
+
+.cancel{
+    border: none;
+    color: red;
+    background-color:white;
+    font-size: 1.4rem;
+}
+
+#form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.check{
+    text-decoration-line: line-through;
+}
+
+.display{
+    display: block;
+}
+
+.tasks{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between ;
+    gap: 30px;  
+    background-color: lightblue;
+    border: 3px solid red;
+    margin: 5px;
+    max-width: 100%;
+}
+
+.details{
+    overflow: auto;
+}
+
+.headTitle{
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+.line{
+
+}
+.line > div{
+    text-decoration: line-through;
+}
+
+.low{
+    background-color: yellow;
+}
+
+button{
+    padding: 5px;
+}
